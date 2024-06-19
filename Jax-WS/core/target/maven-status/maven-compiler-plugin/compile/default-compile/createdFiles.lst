@@ -1,0 +1,5 @@
+service\core\AbstractQuotationService.class
+service\core\Quotation.class
+service\core\QuotationService.class
+service\core\BrokerService.class
+service\core\ClientInfo.class

@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+
+  broker:
+    build: broker
+    ports:
+      - "9000:9000"
+    networks:
+      - brokernet
+
+  auldfellas:
+    build: auldfellas
+    networks:
+      - brokernet
+
+  dodgygeezers:
+    build: dodgygeezers
+    networks:
+      - brokernet
+
+  girlsallowed:
+    build: girlsallowed
+    networks:
+      - brokernet
+
+networks:
+  brokernet:
+    driver: bridge
